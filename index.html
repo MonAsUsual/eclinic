@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eClinic Hospital</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    margin:0;
+    background:#f5f9fc;
+    color:#19324d;
+}
+
+nav{
+    height:75px;
+    background:white;
+    padding:0 7%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #dce8f2;
+    box-shadow:0 2px 10px #dce5ec;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#1261a0;
+}
+
+.logo span{
+    color:#d62828;
+}
+
+.nav a{
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:5px;
+    font-weight:bold;
+    margin-left:8px;
+}
+
+.login{
+    color:#1261a0;
+    border:1px solid #1261a0;
+}
+
+.register{
+    background:#1261a0;
+    color:white;
+}
+
+.hero{
+    min-height:calc(100vh - 75px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:100px;
+    padding:40px 8%;
+    background:linear-gradient(120deg,#eaf6ff,#ffffff);
+}
+
+.text{
+    max-width:500px;
+}
+
+.text h1{
+    font-size:50px;
+    margin:0 0 15px;
+    color:#1261a0;
+}
+
+.text p{
+    font-size:18px;
+    color:#718394;
+    margin-bottom:30px;
+}
+
+.button{
+    display:inline-block;
+    padding:14px 25px;
+    background:#1261a0;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.hospital{
+    width:300px;
+    height:300px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 15px 35px #d5e2eb;
+}
+
+.hospital-icon{
+    width:150px;
+    height:150px;
+    border-radius:20px;
+    background:#1261a0;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:100px;
+}
+
+@media(max-width:800px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .text h1{
+        font-size:40px;
+    }
+
+    .hospital{
+        width:230px;
+        height:230px;
+    }
+
+    .hospital-icon{
+        width:120px;
+        height:120px;
+        font-size:75px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        e<span>Clinic</span>
+    </div>
+
+    <div class="nav">
+        <a href="/login" class="login">Login</a>
+        <a href="/login" class="register">Register</a>
+    </div>
+
+</nav>
+
+<section class="hero">
+
+    <div class="text">
+
+        <h1>eClinic Hospital</h1>
+
+        <p>
+            Your simple and convenient hospital appointment system.
+        </p>
+
+        <a href="/login" class="button">
+            Book Appointment
+        </a>
+
+    </div>
+
+    <div class="hospital">
+
+        <div class="hospital-icon">+</div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

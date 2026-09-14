@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Appointment Confirmed - eClinic</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f8fb;
+            margin: 0;
+        }
+
+        .header {
+            background: #1976d2;
+            color: white;
+            padding: 20px 8%;
+        }
+
+        .container {
+            width: 450px;
+            margin: 50px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #123b63;
+        }
+
+        .code {
+            background: #eaf5ff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .code h1 {
+            color: #1976d2;
+            letter-spacing: 2px;
+        }
+
+        .home {
+            display: block;
+            text-align: center;
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 6px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h2 style="color:white;">
+            eClinic
+        </h2>
+
+    </div>
+
+
+    <div class="container">
+
+        <h2>
+            Appointment Confirmed ✅
+        </h2>
+
+        <p>
+            Your appointment has been successfully booked.
+        </p>
+
+        <hr>
+
+
+        <p>
+            <strong>Full Name:</strong>
+            {{ full_name }}
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            {{ email }}
+        </p>
+
+        <p>
+            <strong>Date:</strong>
+            {{ appointment_date }}
+        </p>
+
+        <p>
+            <strong>Time:</strong>
+            {{ appointment_time }}
+        </p>
+
+        <p>
+            <strong>Reason:</strong>
+            {{ reason }}
+        </p>
+
+
+        <div class="code">
+
+            <p>
+                Your Appointment Code
+            </p>
+
+            <h1>
+                {{ appointment_code }}
+            </h1>
+
+        </div>
+
+
+        <p>
+            Please save this code. You will need
+            it on your appointment date.
+        </p>
+
+
+        <a href="/" class="home">
+            Back to Home
+        </a>
+
+    </div>
+
+</body>
+
+</html>
